@@ -22,7 +22,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="username" placeholder="Username" class="form-control"  type="text">
+  <input  name="username" placeholder="Username" class="form-control"  type="text" pattern="[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]$" title="enter valid username" required>
     </div>
   </div>
 </div>

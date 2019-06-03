@@ -23,7 +23,8 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text" pattern="[A-Za-z]{2,8}" title="maximum length is 8 character and must in a valid format"  required />
+
     </div>
   </div>
 </div>
@@ -35,7 +36,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text" pattern="[A-Za-z]{2,8}" title="maximum length is 8 character and must in a valid format" required  />
     </div>
   </div>
 </div>
@@ -47,7 +48,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="user_name" placeholder="Username" class="form-control"  type="text">
+  <input  name="user_name" placeholder="Username" class="form-control"  type="text" pattern="[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]$" title="enter valid username" required>
     </div>
   </div>
 </div>
@@ -59,7 +60,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="user_password" placeholder="Password" class="form-control"  type="password">
+  <input name="user_password" id="user_password" placeholder="Password" class="form-control"  type="password" title="password must be minimum 5 character with one special character" required>
     </div>
   </div>
 </div>
@@ -71,7 +72,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
+  <input name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="form-control"  type="password"  title="password must be minimum 5 character with no special character" required>
     </div>
   </div>
 </div>
@@ -82,7 +83,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="my_email" placeholder="E-Mail Address"  onblur="validateEmail()" class="form-control"  type="email">
+  <input name="my_email" placeholder="E-Mail Address"  class="form-control"  type="email" pattern="/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/" required/>
     </div>
   </div>
 </div>
@@ -95,7 +96,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="mobile" placeholder="(+92)" class="form-control" type="text">
+  <input name="mobile" placeholder="(+92)" class="form-control" type="text" pattern="[0-9]{11,11}" title="phone must be 11 numbers and in valid format" required>
     </div>
   </div>
 </div>
@@ -126,30 +127,50 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4"><br>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="button"
-                                                                                   onclick="validateEmail()"
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="button" onclick="myfunc()">
 
   </div>
 </div>
+
+
+  <div class="form-group">
+    <label class="col-md-4 control-label"></label>
+    <div class="col-md-4"><br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="submit" onclick="myfunc()"
+      class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT
+        <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+    </div>
+  </div>
+
+
+
+
 
 </fieldset>
 </form>
 </div>
 </body></html><!-- /.container -->
 
-<script>
 
-  function validateEmail() {
-    //var emailll = document.getElementsByName(my_email);
-    //var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailll)) {
-    //  return true;
-  //  } else {
-      alert("sorry");
-    // }
+<script>
+  function myfunc(){
+
+    var pass1= document.getElementById("user_password").value;
+    var pass2= document.getElementById("confirm_password").value;
+
+
+    if(pass1.localeCompare(pass2) != 0)
+
+
+    {alert("password dont match !");}
+
+
   }
 
 
 
+
+
 </script>
-    
+
+
