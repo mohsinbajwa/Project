@@ -9,7 +9,7 @@
     
     <div class="container col-lg-12 col-md-12 "  style="padding-top:10%;">
 
-    <form class="well form-horizontal" action="..." method="get"  id="contact_form" style="alignment-adjust:central;">
+    <form class="well form-horizontal" action="loginphpfile.php" method="get"  id="contact_form" style="alignment-adjust:central;">
 <fieldset>
 
 <!-- Form Name -->
@@ -46,7 +46,7 @@
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4"><br>
     &nbsp&nbsp&nbsp
-    <button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp </button>&nbsp Not registered? click here to  <span style="color:#10F947;"><a href="ownerregistration.html">Register.</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+    <button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp </button>&nbsp Not registered? click here to  <span style="color:#10F947;"><a href="ownerregistration.php">Register.</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
   </div>
 </div>
 

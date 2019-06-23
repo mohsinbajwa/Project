@@ -9,7 +9,7 @@
     
     <div class="container col-lg-12 col-md-12" style="padding-top:4%;">
 
-    <form class="well form-horizontal" enctype="multipart/form-data"
+    <form class="well form-horizontal" action="ownerregphpfile.php " enctype="multipart/form-data"
      method="POST"  id="contact_form">
 <fieldset>
 
@@ -23,7 +23,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text" pattern="[A-Za-z]{2,8}" title="maximum length is 8 character and must in a valid format"  required />
+  <input  name="fname" placeholder="First Name" class="form-control"  type="text" pattern="[A-Za-z]{2,8}" title="maximum length is 8 character and must in a valid format"  required />
 
     </div>
   </div>
@@ -36,7 +36,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text" pattern="[A-Za-z]{2,8}" title="maximum length is 8 character and must in a valid format" required  />
+  <input name="lname" placeholder="Last Name" class="form-control"  type="text" pattern="[A-Za-z]{2,8}" title="maximum length is 8 character and must in a valid format" required  />
     </div>
   </div>
 </div>
@@ -48,7 +48,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="user_name" placeholder="Username" class="form-control"  type="text" pattern="[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]$" title="enter valid username" required>
+  <input  name="username" placeholder="Username" class="form-control"  type="text" pattern="[a-zA-Z0-9](_(?!(\.|_))|\.(?!(_|\.))|[a-zA-Z0-9]){6,18}[a-zA-Z0-9]$" title="enter valid username" required>
     </div>
   </div>
 </div>
@@ -60,7 +60,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="user_password" id="user_password" placeholder="Password" class="form-control"  type="password" title="password must be minimum 5 character with one special character" required>
+  <input name="password" id="user_password" placeholder="Password" class="form-control"  type="password" title="password must be minimum 5 character with one special character" required>
     </div>
   </div>
 </div>
@@ -83,7 +83,7 @@
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="my_email" placeholder="E-Mail Address"  class="form-control"  type="email" pattern="/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/" required/>
+  <input name="email" placeholder="E-Mail Address"  class="form-control"  type="email" pattern="/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/" required/>
     </div>
   </div>
 </div>
@@ -124,26 +124,18 @@
 <!-- Select Basic -->
 
 
-<div class="form-group">
-  <label class="col-md-4 control-label"></label>
-  <div class="col-md-4"><br>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="button" onclick="myfunc()">
-
-  </div>
-</div>
-
 
   <div class="form-group">
     <label class="col-md-4 control-label"></label>
     <div class="col-md-4"><br>
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="submit" onclick="myfunc()"
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="submit"
       class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT
         <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
     </div>
   </div>
 
 
-
+s
 
 
 </fieldset>

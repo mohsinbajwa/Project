@@ -10,7 +10,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Homstel Test</title>
+<title>Homstel</title>
 
 
 <!-- Library CSS -->
@@ -64,8 +64,8 @@
                 <div class="reg_menu_cont_logo"><div class="reg_menu_cont_logo_close"><span></span><span></span></div>Homstel.</div>
                 <ul>
                     <li><a href="#about"><span>About</span></a></li>
-                    <li><a href="owner/index.html"><span>Hostel Owner's Portal</span></a></li>
-                    <li><a href="#"><span>Admin Portal</span></a></li>
+                    <li><a href="owner/index.php"><span>Hostel Owner's Portal</span></a></li>
+                    <li><a href="admin/index.php"><span>Admin Portal</span></a></li>
                     <li><a href="#services"><span>Contact</span></a></li>
                     
                 </ul>
